@@ -4,9 +4,13 @@
   cursor: pointer;
   display: flex;
   box-sizing: border-box;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .button:active {
   color: cyan;
+}
+
+.button:hover {
+  transform: scale(1.15);
 }
