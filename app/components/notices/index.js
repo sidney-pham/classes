@@ -91,7 +91,7 @@ export default React.createClass({
             key={i}
             title={<div className={STYLE.title}>
               <div style={{ 'fontSize': '1.2em' }}>
-                <span>{ notice.title }</span>
+                <span style={{ 'fontWeight': '400' }}>{ notice.title }</span>
                 {meeting}
               </div>
               <div style={{ 'fontSize': '0.8em', 'color': '#757575' }}>{ notice.author } | { notice.target }</div>
