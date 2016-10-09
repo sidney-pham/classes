@@ -18,3 +18,7 @@ REDIRECT_URI
 PORT // Optional with OpenShift.
 IP // Optional with OpenShift.
 ```
+
+Just run this:
+-------------
+`COOKIE_SECRET=ANYTHING CLIENT_ID={id} CLIENT_SECRET={secret} REDIRECT_URI={http://your url (origin only):port} PORT={port} npm start`
