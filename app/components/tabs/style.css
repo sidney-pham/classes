@@ -10,17 +10,17 @@
 }
 
 .button {
-  height: 4em;
+  height: 5em;
   display: flex;
   box-sizing: border-box;
   text-align: center;
-  width: 4em;
+  width: 5em;
 }
 
 .content {
   position: absolute;
   top: 0; bottom: 0;
-  left: 4em; right: 0;
+  left: 5em; right: 5em;
   overflow: auto;
 }
 
