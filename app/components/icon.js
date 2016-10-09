@@ -18,6 +18,6 @@ export default function (props) {
       ...style,
       'fill': 'currentcolor',
       'verticalAlign': 'middle',
-      'width': size || '1.5em'
+      'width': size || '2em'
     }}>{icons[icon]}</svg>;
 }
