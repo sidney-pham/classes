@@ -1,11 +1,11 @@
 export function get(url, cb) {
   let req = new XMLHttpRequest();
   req.onreadystatechange = function() { 
-    if (req.readyState == 4) {
-      if (req.status == 200) {
-        cb(null, req.responseText);
+    if (this.readyState == 4) {
+      if (this.status == 200) {
+        cb(null, this.responseText);
       } else {
-        cb(req.status || 403, req.responseText);
+        cb(this.status || 403, this.responseText);
       }
     }
   }
@@ -18,11 +18,11 @@ export function post(url, data, cb) {
   let params = Object.keys(data).map(key => key + '=' + encodeURIComponent(data[key])).join('&');
 
   req.onreadystatechange = function() { 
-    if (req.readyState == 4) {
-      if (req.status == 200) {
-        cb(null, req.responseText);
+    if (this.readyState == 4) {
+      if (this.status == 200) {
+        cb(null, this.responseText);
       } else {
-        cb(req.status || 403, req.responseText);
+        cb(this.status || 403, this.responseText);
       }
     }
   }
